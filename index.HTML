@@ -6,13 +6,15 @@
     <title>OUDA Cafe</title>
 
     <link rel="stylesheet" href="STYLE.css">
+    <script src="SCRIPT.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="logo">
-    <img src="images/logo.png" alt="OUDA Cafe Logo">
+    <img src="images/Logo.png" alt="OUDA Cafe Logo">
 </div>
+<div class="menu-toggle" id="menu-toggle">
  <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -34,48 +36,162 @@
         </div>
 
     </section>
-      <!-- Menu Section -->
     <section class="menu" id="menu">
-
-        <h2>Our Menu</h2>
-
-        <div class="products">
-
-    <div class="product-card">
-        <img src="images/firstphoto.png" alt="Coffee">
-        <h3>Coffee</h3>
-        <p>Fresh and delicious coffee.</p>
-        <span>60 EGP</span>
+    <div class="menu-heading">
+        <h2>OUR MENU</h2>
+        <p>COFFEE & MORE</p>
     </div>
 
-    <div class="product-card">
-        <img src="images/secondphot.png" alt="Iced Latte">
-        <h3>Iced Latte</h3>
-        <p>Cold and refreshing iced latte.</p>
-        <span>90 EGP</span>
-    </div>
+    <div class="menu-container">
 
-    <div class="product-card">
-        <img src="images/four.png" alt="Cappuccino">
-        <h3>Cappuccino</h3>
-        <p>Rich coffee with creamy milk.</p>
-        <span>80 EGP</span>
-    </div>
+        <!-- LEFT COLUMN -->
+        <div class="menu-column">
 
-</div>
+            <div class="menu-category">
+                <h3>HOT COFFEE</h3>
+                <div class="menu-labels">
+                    <span>ITEM</span><span>M</span><span>L</span>
+                </div>
+                <div class="menu-item"><span>Matcha</span><span>115</span><span>130</span></div>
+                <div class="menu-item"><span>Espresso</span><span>—</span><span>50</span></div>
+                <div class="menu-item"><span>Piccolo</span><span>—</span><span>65</span></div>
+                <div class="menu-item"><span>Cortado</span><span>—</span><span>65</span></div>
+                <div class="menu-item"><span>Macchiato</span><span>—</span><span>65</span></div>
+                <div class="menu-item"><span>Cappuccino</span><span>65</span><span>80</span></div>
+                <div class="menu-item"><span>Flat White</span><span>70</span><span>85</span></div>
+                <div class="menu-item"><span>Latte</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Spanish Latte</span><span>80</span><span>95</span></div>
+                <div class="menu-item"><span>Americano</span><span>—</span><span>60</span></div>
+                <div class="menu-item"><span>Hot Chocolate</span><span>55</span><span>70</span></div>
+                <div class="menu-item"><span>Turkish Coffee</span><span>30</span><span>40</span></div>
+                <div class="menu-item"><span>French Coffee</span><span>50</span><span>60</span></div>
+                <div class="menu-item"><span>Hazelnut Coffee</span><span>—</span><span>60</span></div>
+                <div class="menu-item"><span>Tea</span><span>20</span><span>—</span></div>
+            </div>
 
+            <div class="menu-category">
+                <h3>ICED COFFEE</h3>
+                <div class="menu-labels">
+                    <span>ITEM</span><span>M</span><span>L</span>
+                </div>
+                <div class="menu-item"><span>Iced Spanish Latte</span><span>80</span><span>95</span></div>
+                <div class="menu-item"><span>Iced Latte</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Iced Caramel Macchiato</span><span>85</span><span>100</span></div>
+                <div class="menu-item"><span>Iced Salted Caramel</span><span>100</span><span>115</span></div>
+                <div class="menu-item"><span>Iced White Mocha</span><span>85</span><span>100</span></div>
+                <div class="menu-item"><span>Iced Mocha</span><span>85</span><span>100</span></div>
+                <div class="menu-item"><span>Iced Americano</span><span>55</span><span>70</span></div>
+                <div class="menu-item"><span>Dirty Espresso</span><span>—</span><span>150</span></div>
+            </div>
 
-            <div class="product-card">
-                <img src="images/four.png" alt="Cappuccino">
-
-                <h3>Cappuccino</h3>
-
-                <p>Rich coffee with creamy milk.</p>
-
-                <span>80 EGP</span>
+            <div class="menu-category">
+                <h3>FRAPPÉ</h3>
+                <div class="menu-labels">
+                    <span>ITEM</span><span>M</span><span>L</span>
+                </div>
+                <div class="menu-item"><span>Caramel</span><span>95</span><span>110</span></div>
+                <div class="menu-item"><span>Hazelnut</span><span>110</span><span>125</span></div>
+                <div class="menu-item"><span>Dark Chocolate</span><span>95</span><span>110</span></div>
+                <div class="menu-item"><span>Vanilla</span><span>100</span><span>115</span></div>
+                <div class="menu-item"><span>Oreo</span><span>110</span><span>125</span></div>
+                <div class="menu-item"><span>Cookies</span><span>110</span><span>125</span></div>
+            </div>
+            <div class="menu-category">
+                <h3>ICED MATCHA</h3>
+                <div class="menu-labels">
+                    <span>ITEM</span><span>M</span><span>L</span>
+                </div>
+                <div class="menu-item"><span>Iced Matcha</span><span>115</span><span>130</span></div>
+                <div class="menu-item"><span>Strawberry Matcha</span><span>125</span><span>140</span></div>
+                <div class="menu-item"><span>Mango Matcha</span><span>125</span><span>140</span></div>
+                <div class="menu-item"><span>Blue Matcha</span><span>125</span><span>140</span></div>
+                <div class="menu-item"><span>Pink Matcha Creamy</span><span>160</span><span>175</span></div>
+                <div class="menu-item"><span>White Matcha</span><span>135</span><span>150</span></div>
             </div>
 
         </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="menu-column">
+
+            <div class="menu-category">
+                <h3>SPECIALTY COFFEE</h3>
+                <div class="menu-labels single-price">
+                    <span>ITEM</span><span>PRICE</span>
+                </div>
+                <div class="menu-item single-price"><span>V60 Ethiopian</span><span>120</span></div>
+                <div class="menu-item single-price"><span>V60 Colombian</span><span>120</span></div>
+                <div class="menu-item single-price"><span>V60 Brazilian</span><span>120</span></div>
+            </div>
+
+            <div class="menu-category">
+                <h3>ICED TEA</h3>
+                <div class="menu-labels single-price">
+                    <span>ITEM</span><span>PRICE</span>
+                </div>
+                <div class="menu-item single-price"><span>Iced Tea Classic</span><span>50</span></div>
+                <div class="menu-item single-price"><span>Iced Tea Peach</span><span>65</span></div>
+                <div class="menu-item single-price"><span>Iced Tea Passion Fruit</span><span>65</span></div>
+                <div class="menu-item single-price"><span>Iced Tea Blue Berry</span><span>65</span></div>
+                <div class="menu-item single-price"><span>Iced Tea Raspberry</span><span>65</span></div>
+            </div>
+
+            <div class="menu-category">
+                <h3>MOJITO</h3>
+                <div class="menu-labels">
+                    <span>ITEM</span><span>M</span><span>L</span>
+                </div>
+                <div class="menu-item"><span>Passion Fruit</span><span>65</span><span>80</span></div>
+                <div class="menu-item"><span>Blue Berry</span><span>65</span><span>80</span></div>
+                <div class="menu-item"><span>Sunrise</span><span>65</span><span>80</span></div>
+                <div class="menu-item"><span>Mix Drink</span><span>65</span><span>80</span></div>
+                <div class="menu-item"><span>Red Bull Mojito</span><span>110</span><span>125</span></div>
+            </div>
+
+            <div class="menu-category">
+                <h3>SMOOTHIES</h3>
+                <div class="menu-labels">
+                    <span>ITEM</span><span>M</span><span>L</span>
+                </div>
+                <div class="menu-item"><span>Blue Berry</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Raspberries</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Passion Fruit</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Pink Lemonada</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Apple Peach</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Pina Colada</span><span>110</span><span>125</span></div>
+                <div class="menu-item"><span>Strawberry</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Mango</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Mixed Berries</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Lemon Mint</span><span>60</span><span>75</span></div>
+                <div class="menu-item"><span>Watermelon (Seasonal)</span><span>60</span><span>75</span></div>
+            </div>
+
+            <div class="menu-category">
+                <h3>DESSERTS</h3>
+                <div class="menu-labels single-price">
+                    <span>ITEM</span><span>PRICE</span>
+                </div>
+                <div class="menu-item single-price"><span>Large Cookies</span><span>110</span></div>
+                <div class="menu-item single-price"><span>Large Brownie</span><span>100</span></div>
+            </div>
+
+            <div class="menu-category">
+                <h3>EXTRAS</h3>
+                <div class="menu-labels single-price">
+                    <span>ITEM</span><span>PRICE</span>
+                </div>
+                <div class="menu-item single-price"><span>Oat Milk</span><span>35</span></div>
+                <div class="menu-item single-price"><span>Coconut Milk</span><span>35</span></div>
+                <div class="menu-item single-price"><span>Almond Milk</span><span>35</span></div>
+                <div class="menu-item single-price"><span>Whipped Cream</span><span>30</span></div>
+                <div class="menu-item single-price"><span>Syrup</span><span>30</span></div>
+                <div class="menu-item single-price"><span>Small Water Bottle</span><span>10</span></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+     
 
     </section>
       <section class="about" id="about">
